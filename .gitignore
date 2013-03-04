@@ -14,6 +14,7 @@ project/plugins/project/
 
 .sbt-extras.sh
 
-*.sw*
+.*.sw*
+.*.un~
 
 .lib
