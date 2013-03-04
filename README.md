@@ -12,7 +12,7 @@ And finally paste the rest:
     git clone git@github.com:leifwickland/scala-project-shell.git $newproj
     cd $newproj
     git remote rm origin
-    sed -i '1 s/.*/$newproj/' README.md
+    echo -e "$newproj\n====================" > README.md
     git add README.md
     git ci -m "Set project name"
     git remote add origin git@github.com:leifwickland/$newproj.git
